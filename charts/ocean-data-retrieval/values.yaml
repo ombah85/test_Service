@@ -199,9 +199,9 @@ controller:
     ## The annotations of the Ingress controller service.
     annotations:
       nato-ist/id: "1234"
-      nato-ist/name: "maritime-service-radar"
-      nato-ist/description: "Radar service provided by the Government of Canada"
-      nato-ist/keywords: "radar;diameter;coverage;map;download"
+      nato-ist/name: "maritime-Ocean-temperature"
+      nato-ist/description: "Ocean temperature service provided by the Government of Canada"
+      nato-ist/keywords: "temperature;Ocean;map;download"
       nato-ist/provenance: "LOCAL"
       nato-ist/contact-name: "John Smith"
       nato-ist/contact-country: "Canada"
