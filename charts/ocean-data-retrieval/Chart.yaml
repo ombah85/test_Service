@@ -1,4 +1,4 @@
-apiVersion: v2
+apiVersion: v1
 name: ocean-data-retrieval
 description: Ocean Temperature service provided by the Government of Canada
 
