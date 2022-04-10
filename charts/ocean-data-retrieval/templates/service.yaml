@@ -2,18 +2,18 @@ apiVersion: v1
 kind: Service
 metadata:
   name: {{ include "ocean-data-retrieval.fullname" . }}
-  {{- with .Values.service.annotations }}
+  {{- with .values.service.annotations }}
   annotations:
   {{- toYaml . | nindent 8 }}
   {{- end }}
   labels:
   {{- include "ocean-data-retrieval.labels" . | nindent 4 }}
 spec:
-  type: {{ .Values.service.type }}
+  type: {{ .values.service.type }}
   ports:
-    - port: {{ .Values.service.externalPort }}
-      targetPort: {{ .Values.service.internalPort }}
+    - port: {{ .values.service.externalPort }}
+      targetPort: {{ .values.service.internalPort }}
       protocol: TCP
-      name: {{ .Values.service.externalPort | quote }}
+      name: {{ .values.service.externalPort | quote }}
   selector:
   {{- include "ocean-data-retrieval.selectorLabels" . | nindent 4 }}
